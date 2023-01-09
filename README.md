@@ -1,6 +1,8 @@
 # JMU-Assistant for Desktop
 集美大学助手 桌面APP
 
+下载安装 [Download](https://github.com/yuanczx/JMU-Assistant-Desktop/releases/)
+
 ## 框架
 - App主体：[Tauri](https://tauri.app)+[Vite](https://vitejs.dev)+[Vue](https://vuejs.org)+[Typescript](https://www.typescriptlang.org/)
 - UI：[Element Plus](https://element-plus.org)
