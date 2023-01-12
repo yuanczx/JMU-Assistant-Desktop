@@ -19,7 +19,8 @@
         <el-row v-if="courseTable[dayIndex-1][$index].name!==''"
                 class="course"
                 justify="center"
-                align="middle">
+                align="middle"
+        style="height: 95px">
           <el-col>
             {{ courseTable[dayIndex - 1][$index].name }}
           </el-col>
@@ -33,6 +34,9 @@
               {{ courseTable[dayIndex - 1][$index].room }}
             </el-tag>
           </el-col>
+        </el-row>
+        <el-row v-else>
+          <div style="height: 95px"/>
         </el-row>
       </template>
     </el-table-column>

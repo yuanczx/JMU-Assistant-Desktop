@@ -13,6 +13,7 @@
     "@element-plus/icons-vue": "^2.0.10",
     "@tauri-apps/api": "^1.2.0",
     "element-plus": "^2.2.28",
+    "moment": "^2.29.4",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },

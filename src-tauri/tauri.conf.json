@@ -8,11 +8,27 @@
   },
   "package": {
     "productName": "JMU Assistant",
-    "version": "0.0.1"
+    "version": "0.0.2"
   },
   "tauri": {
     "allowlist": {
       "all": false,
+      "path": {
+        "all": true
+      },
+      "fs": {
+        "all": true,
+        "readFile": true,
+        "writeFile": true,
+        "readDir": true,
+        "copyFile": true,
+        "createDir": true,
+        "removeDir": true,
+        "removeFile": true,
+        "renameFile": true,
+        "exists": true,
+        "scope": ["$DOWNLOAD/*"]
+      },
       "shell": {
         "all": true,
         "open": true,
@@ -22,7 +38,21 @@
           {
             "name": "sidecar/request",
             "sidecar": true,
-            "args": ["-u",{"validator": "\\S+"},"-p",{"validator": "\\S+"}]
+            "args": [
+              "-u",
+              {
+                "validator": "\\S+"
+              },
+              "-p",
+              {
+                "validator": "\\S+"
+              }
+            ]
+          },
+          {
+            "name": "open-explorer",
+            "cmd": "explorer",
+            "args": ["/select,",{"validator":"\\S+"}]
           }
         ]
       },
@@ -68,7 +98,9 @@
         "digestAlgorithm": "sha256",
         "timestampUrl": "",
         "wix": {
-          "language": ["zh-CN"]
+          "language": [
+            "zh-CN"
+          ]
         }
       }
     },
