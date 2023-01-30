@@ -65,7 +65,4 @@ if __name__ == '__main__':
     parser.add_argument('-u', type=str)
     parser.add_argument('-p', type=str)
     args = parser.parse_args()
-    try:
-        print(login(user_name=args.u, user_pwd=args.p))
-    finally:
-        exit(1)
+    print(login(user_name=args.u, user_pwd=args.p))
